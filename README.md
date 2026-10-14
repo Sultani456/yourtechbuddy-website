@@ -1,6 +1,8 @@
-# YourTechBuddy: Business Website
+# YourTechBuddy Website
 
-A modern, responsive multi-page website for **YourTechBuddy**, a local tech-support business in Surrey, BC. It brings together four services (smart homes, Wi-Fi and networking, tech support, and web development), a product shop, a booking flow and a library of practical tech guides.
+This is the website I designed and built for YourTechBuddy, a tech-support business I co-founded. We're based in Surrey, BC and work with homes and small businesses across Metro Vancouver.
+
+The site covers our four services (smart homes, Wi-Fi and networking, tech support, and web development). Customers can book an appointment online, buy from a small product shop and leave reviews, and there's a set of how-to articles. Behind the public pages there's an admin dashboard where we update content, handle bookings and messages, and approve reviews without touching the code.
 
 **Live site:** [yourtechbuddy.ca](https://yourtechbuddy.ca)
 
@@ -8,137 +10,141 @@ A modern, responsive multi-page website for **YourTechBuddy**, a local tech-supp
 
 | | |
 |---|---|
-| **Role** | Co-founder; designer and developer of the website |
-| **Type** | Small-business website with shop, booking and articles |
-| **Built with** | HTML, CSS, JavaScript (no frameworks) |
+| **Role** | Co-founder, designer and developer |
+| **Type** | Small-business website with booking, shop, articles and an admin dashboard |
+| **Built with** | HTML, CSS, JavaScript, PHP, MySQL |
 | **Year** | 2026 |
 | **Source code** | Private, available on request |
 
-> **Note:** This repository is a visual showcase of the project. It contains screenshots and a project write-up only. The source code is private.
+> This repository is a showcase of the project: screenshots and a write-up. The source code isn't included.
 
 ---
 
 ## Contents
-- [My Role](#my-role)
+- [My role](#my-role)
 - [Screenshots](#screenshots)
 - [Features](#features)
-- [Challenges and Solutions](#challenges-and-solutions)
-- [Built With](#built-with)
+- [Challenges and solutions](#challenges-and-solutions)
+- [Built with](#built-with)
 - [Contact](#contact)
 
 ---
 
-## My Role
+## My role
 
-I'm a co-founder of YourTechBuddy, and I designed and built the company website from idea to launch.
+I took the website from a blank page to launch. I worked out what the business actually needed online, grouped our services into four categories, planned the pages and navigation, and wrote most of the copy.
 
-- **Defined the requirements:** I decided what the business needed online: four service areas, a product shop, booking and contact forms, and a Tech Tips section.
-- **Shaped the structure and content:** I reorganised the services into four clear categories, chose the pages and navigation, and decided on the wording, business details and calls to action.
-- **Designed and developed the site:** I built the pages with HTML, CSS and JavaScript, set up the shared design system (colours, spacing, cards and icons) and kept the branding consistent across about 50 pages.
-- **Tested and refined:** I checked every page on desktop and phone and refined the layout until it worked well on every screen size.
+I built the front end by hand with HTML, CSS and JavaScript, without a framework. Early on I set up a small design system (colours, spacing, cards and icons) so that the 50 or so pages look like they belong together.
+
+Later I added a back end with PHP and MySQL for online booking, the product catalogue, customer reviews, email notifications and the admin dashboard. I used AI coding tools for a good part of that code. My part was deciding what each feature had to do, reviewing what came back, testing it on desktop and phone, and deploying each version.
 
 ---
 
 ## Screenshots
 
 ### Homepage
-The hero gives a clear headline, a one-line summary of the services, two calls to action, and four trust badges.
+A short headline, a one-line summary of what we do, two buttons and four small trust badges.
 
 ![Homepage hero](screenshots/01-home-hero.png)
 
-### Call to Action and Footer
-A closing call-to-action banner sits above a footer that holds quick links, the four service areas, contact details, business hours and a newsletter sign-up.
+### Call to action and footer
+The closing banner, followed by a footer with quick links, the four services, contact details, opening hours and a newsletter sign-up.
 
 ![Call to action and footer](screenshots/02-home-cta-and-footer.png)
 
-### Services Overview
-Four value points in a single panel, followed by the four main service categories, each with its own illustration, summary and button.
+### Services overview
+Four value points, then the four service categories, each with its own image, summary and button.
 
 ![Services overview](screenshots/03-services-overview.png)
 
-### Service Page: Smart Home Solutions
-A 12-tile "What We Help With" grid, with links to related services for visitors whose problem fits another area.
+### Service page: Smart Home Solutions
+Every service page has a "What We Help With" grid like this one, plus links to related services in case a visitor's problem fits better somewhere else.
 
 ![Smart Home Solutions: What We Help With](screenshots/04-smart-home-what-we-help-with.png)
 
-### Product Shop
-The catalogue has category filters, product badges, prices, Add to Cart buttons and detail pages.
+### Product shop
+Category filters, badges, prices, Add to Cart buttons and a detail page for each product.
 
 ![Product shop](screenshots/05-products-shop.png)
 
 ### About
-Four value cards set out what the business stands for: Friendly First, Honest & Transparent, Fast & Reliable, and Plain-English Help.
+The four things we care about most: Friendly First, Honest & Transparent, Fast & Reliable, and Plain-English Help.
 
 ![About page: What We Stand For](screenshots/06-about-values.png)
 
 ### Contact
-The page has contact cards, a validated contact form, and panels for support hours, response time and service area.
+Contact cards, a contact form, and panels for support hours, response time and the area we cover.
 
 ![Contact page](screenshots/07-contact.png)
 
 ### Tech Tips
-Short, practical guides that can be filtered by topic: Smart Home, Wi-Fi & Networks, Tech Support, and Web & Digital.
+Short how-to guides that can be filtered by topic.
 
 ![Tech Tips](screenshots/08-tech-tips.png)
+
+### Online booking
+You pick a day from a small calendar, then a time from the slots that are actually free that day.
+
+![Booking: choosing a date and time](screenshots/09-booking-date-and-time.png)
+
+### Admin dashboard
+This is where we run the site from. The screenshot shows the "What We Help With" tiles for one of the service pages. We can add, edit, hide or reorder them, and the public page updates as soon as we save.
+
+![Admin dashboard: service page tiles](screenshots/10-admin-service-pages.png)
 
 ---
 
 ## Features
 
-- **Four service areas:**
-  - Smart Home Solutions;
-  - Network Design & Setup;
-  - Tech Support;
-  - Web Development.
-
-  Each has its own page with a "What We Help With" grid, real customer scenarios ("Sound familiar?") and links to related services.
-- **Three ways to get help:** in-home, online remote, and drop-off support.
-- **Booking and contact forms:**
-  - input is validated in the browser;
-  - links can pre-select a service or contact reason, so a "Book" button on a service page opens the form with that service already chosen.
-- **Product shop:**
-  - 12 products with category filters and product detail pages;
-  - a cart that is saved in the browser;
-  - optional setup add-ons;
-  - a checkout page that works through the full flow. It is a demo, so no real payment is processed.
-- **Tech Tips:** 12 how-to articles with topic filters.
-- **Fully responsive:** the layouts adapt from 320px phones to 1920px desktops, and the mobile menu slides in.
-- **Consistent design system:** shared colours, spacing, card styles and icon set across about 50 pages.
+- **Four service pages.** Each one has a "What We Help With" grid, a few real customer scenarios ("Sound familiar?") and links to related services.
+- **Three ways to get help:** in-home visits, remote support or drop-off.
+- **Online booking.** The calendar only offers days and times that are free, based on our opening hours, holidays and existing bookings. The customer gets a confirmation email with a reference number and we get a copy with all the details. The booking buttons on the service pages open the form with that service already selected.
+- **Contact form and newsletter.** Both are saved to the database, and we get an email when something new comes in.
+- **Product shop.** 12 products with category filters, up to three photos each, a cart that remembers what you added, and optional setup help. Checkout is a demo, so no payment is taken.
+- **Customer reviews.** Star ratings, written reviews and photos. We approve each review before it goes live, the average rating only counts approved reviews, and we can reply under a review.
+- **Tech Tips.** 12 how-to articles, written and published from the dashboard.
+- **Admin dashboard.** Bookings and messages, newsletter sign-ups (with CSV export), products, reviews, service pages, articles, homepage content, FAQ, business details, opening hours and an announcement bar.
+- **Fast pages.** Content is kept in the database, but the public pages are published as plain HTML, so they load quickly.
+- **Responsive** from 320px phones up to 1920px desktops.
 
 ---
 
-## Challenges and Solutions
+## Challenges and solutions
 
-These are some of the problems I ran into while building and refining the site. When I got stuck, I researched online and used AI tools to help pin down the cause and compare possible fixes. Then I applied the solution and tested it across devices.
+A few of the problems I ran into, and how I dealt with them. When I got stuck I searched around and used AI tools to narrow down the cause, then tested the fix on different devices.
 
 | Challenge | Solution |
 |---|---|
-| The site offered too many separate services, which made it hard for visitors to find the right help. | I grouped the services into four clear categories, each with its own page, and set up redirects from the old page addresses so no links would break. |
-| Buttons sometimes needed two clicks: hover animations lifted the cards, moving the button away from the pointer. | I extended each button's invisible click area so it still catches the click while the card moves, so every button works on the first click or tap. |
-| On phones, the current page in the mobile menu shifted to the right, out of line with the other items. | I tracked it to extra left padding on the active link and removed it, so every row uses the same alignment and the labels and arrows line up. |
-| Text on small screens broke awkwardly, with a dash starting a new line and "Wi-Fi" splitting in two. | I adjusted the line-wrapping rules, kept hyphenated words together, and rewrote long messages as clear two-line statements. |
-| The site has many pages and needed to work on every screen size. | I checked each change at widths from small phones (320px) to large desktops (1920px), looking for horizontal scrolling, clipped text, broken images and missed clicks. |
+| We listed too many separate services, and visitors had trouble finding the right one. | I grouped them into four categories, gave each its own page, and redirected the old page addresses so no links broke. |
+| Some buttons needed two clicks, because the hover animation moved the card (and the button) away from the pointer. | I made each button's invisible click area larger, so it still catches the click while the card moves. |
+| On phones, the current page in the mobile menu sat further right than the other items. | The active link had extra left padding. Removing it lined everything up again. |
+| Text on small screens broke in odd places, like a dash starting a new line or "Wi-Fi" splitting in two. | I changed the line-wrapping rules, kept hyphenated words together and rewrote some long messages as two short lines. |
+| We wanted to update content without editing code, but the pages still had to load fast. | The dashboard saves changes to the database and then writes them into the static pages, so visitors still get plain HTML. |
+| Picking a date and time meant scrolling through long dropdown lists. | I replaced them with a small calendar and a grid of time slots that only shows free times. Both work with a mouse, touch or keyboard. |
+| Two people could try to book the same time slot. | The server checks the slot again before saving. If someone just took it, the customer is asked to pick another time. |
+| Product ratings had to be genuine. | Every review is approved before it appears, and the average only counts approved reviews. |
+| With this many pages, every change had to work on every screen size. | I checked each change at widths from 320px phones to 1920px desktops, looking for sideways scrolling, clipped text, broken images and missed taps. |
 
 ---
 
-## Built With
+## Built with
 
 | Area | Tools |
 |---|---|
-| Structure | HTML5 |
-| Styling | CSS3 (custom properties, Grid, Flexbox, responsive media queries) |
-| Interactivity | Vanilla JavaScript (menu, filters, carousels, form validation, cart) |
-| Typography | Plus Jakarta Sans (Google Fonts) |
+| Front end | HTML5, CSS3 (custom properties, Grid, Flexbox), vanilla JavaScript |
+| Back end | PHP |
+| Database | MySQL |
+| Font | Plus Jakarta Sans (Google Fonts) |
 
 ---
 
 ## Contact
 
-YourTechBuddy offers friendly, practical technology help for homes and small businesses in Surrey and the surrounding Metro Vancouver area.
+YourTechBuddy helps homes and small businesses across Metro Vancouver with everyday technology.
 
 - **Website:** [yourtechbuddy.ca](https://yourtechbuddy.ca)
 - **Email:** info@yourtechbuddy.ca
 
-To review the source code for a job application, please get in touch.
+If you'd like to look at the source code for a job application, please get in touch.
 
 © 2026 YourTechBuddy. All rights reserved. See [LICENSE](LICENSE).
